@@ -14,6 +14,10 @@ class AnagramsSuite extends FunSuite {
     assert(wordOccurrences("abcd") === List(('a', 1), ('b', 1), ('c', 1), ('d', 1)))
   }
 
+  test("print Nil") {
+    println(wordOccurrences(""))
+  }
+
   test("wordOccurrences: Robert") {
     assert(wordOccurrences("Robert") === List(('b', 1), ('e', 1), ('o', 1), ('r', 2), ('t', 1)))
   }
